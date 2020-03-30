@@ -1,4 +1,4 @@
-# Helpfull queries on the CovidGraph
+# Helpful queries on the CovidGraph
 
 ## Papers
 
