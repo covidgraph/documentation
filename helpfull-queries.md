@@ -33,26 +33,41 @@ limit 10
 - Search patents with string against a textindex and get a hit score
 
 ```cypher
-call db.index.fulltext.queryNodes("patents","Corona") yield node,score match (node)--(p:Patent)--(pt:PatentTitle)
+call db.index.fulltext.queryNodes("patents","Corona") 
+yield node,score match (node)--(p:Patent)--(pt:PatentTitle)
 return distinct(p.id) as id, collect(pt.text) as titles, labels(node)[0] as found_type, node.lang as found_in_lang ,score
 order by score
 desc limit 10
 ```
 
 ```cypher
-call db.index.fulltext.queryNodes("fragments","corona and virus") yield node as f,score match (f)--(px)--(p:Patent) match (fp:Fragment)-[:NEXT]->(f),(f)-[:NEXT]->(fn:Fragment) return f.kind,[fp.text,f.text,fn.text],p.id,score order by score desc limit 10
+call db.index.fulltext.queryNodes("fragments","corona and virus") 
+yield node as f,score match (f)--(px)--(p:Patent) 
+match (fp:Fragment)-[:NEXT]->(f),(f)-[:NEXT]->(fn:Fragment) 
+return f.kind,[fp.text,f.text,fn.text],p.id,score 
+order by score desc 
+limit 10
 ``` 
 
 - Find matching fragments in patent text
 
 ``` cypher
-call db.index.fulltext.queryNodes("fragments","corona and virus") yield node as f,score match (f)--(px)--(p:Patent) return f.kind,f.text,p.id,score order by score desc limit 10
+call db.index.fulltext.queryNodes("fragments","corona and virus") 
+yield node as f,score match (f)--(px)--(p:Patent) 
+return f.kind,f.text,p.id,score 
+order by score desc 
+limit 10
 ```
 
 - This shows the previous and next fragment in the result 
 
 ```cypher
-call db.index.fulltext.queryNodes("fragments","corona and virus") yield node as f,score match (f)--(px)--(p:Patent) match (fp:Fragment)-[:NEXT]->(f),(f)-[:NEXT]->(fn:Fragment) return f.kind,fp.text,f.text,fn.text,p.id,score order by score desc limit 10
+call db.index.fulltext.queryNodes("fragments","corona and virus") 
+yield node as f,score match (f)--(px)--(p:Patent) 
+match (fp:Fragment)-[:NEXT]->(f),(f)-[:NEXT]->(fn:Fragment) 
+return f.kind,fp.text,f.text,fn.text,p.id,score 
+order by score desc 
+limit 10
 ```
 
 
