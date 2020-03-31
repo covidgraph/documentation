@@ -1,3 +1,4 @@
+[Back to CovidGraph Wiki](https://github.com/covidgraph/documentation/wiki)
 # Helpful queries on the CovidGraph
 
 ## Papers
