@@ -29,6 +29,13 @@ RETURN p,g as result ORDER BY g.sid
 limit 10
 ```
 
+- Number of authors by location/region
+
+```cypher
+MATCH (loc:Location)<-[:AFFILIATION_HAS_LOCATION]-(aff:Affiliation)-[:AUTHOR_HAS_AFFILIATION]-(a:Author) WHERE loc.country IS NOT NULL RETURN loc.country as country, loc.region as region, count(distinct a.email) AS NbrOfAuthors 
+ORDER BY count(distinct a.email) DESC
+```
+
 ## Patents
 
 - Search patents with string against a textindex and get a hit score
