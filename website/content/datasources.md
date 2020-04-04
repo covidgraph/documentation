@@ -1,3 +1,12 @@
+# COVID-19 Open Research Dataset (CORD-19)
+Collection of COVID-19 related scientific papers with metadata like authors, affiliations, references.
+
+Source of the dataset: https://pages.semanticscholar.org/coronavirus-research
+
+Kaggle challenge: https://www.kaggle.com/allen-institute-for-ai/CORD-19-research-challenge
+
+
+
 # Covid-19 cases from John Hopkins University
 
 John Hopkins University (JHU) aggregates data from WHO and other health organizations in a daily report. It contains the number of confirmed cases, deaths and recovered patients.
