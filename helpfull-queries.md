@@ -70,5 +70,19 @@ return f.kind,fp.text,f.text,fn.text,p.id,score
 order by score desc 
 limit 10
 ```
+## Authors
 
+- Ranking authors. First create a projection on the graph, then call the PageRank algorithm:
+
+```cypher
+CALL gds.graph.create.cypher(
+    'Authors_Influence',
+    'MATCH (n:Author) RETURN id(n) AS id',
+    'MATCH (a:Author)-[:AUTHOR_HAS_AUTHOR]->(b:Author) RETURN id(a) AS source, id(b) AS target'
+)
+YIELD graphName, nodeCount, relationshipCount, createMillis;
+```
+```cypher
+CALL gds.pageRank.stream('Authors_Influence') YIELD nodeId, score RETURN gds.util.asNode(nodeId).first, gds.util.asNode(nodeId).last, score ORDER BY score DESC
+```
 
