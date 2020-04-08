@@ -36,6 +36,18 @@ MATCH (loc:Location)<-[:AFFILIATION_HAS_LOCATION]-(aff:Affiliation)-[:AUTHOR_HAS
 ORDER BY count(distinct a.email) DESC
 ```
 
+- Titles and dates of papers whose body text contains a user-specified keyword (e.g. Virus), ordered by date of publication. 
+
+```cypher
+MATCH (p:Paper)-[:PAPER_HAS_BODY_TEXT]->(b:Body_text)  WHERE p.title IS NOT NULL AND p.title CONTAINS("Virus") RETURN p.title, p.publish_time ORDER BY p.publish_time DESC LIMIT 20
+```
+
+- Number of papers whose body text contains a user-specified keyword (e.g. Virus).
+
+```cypher
+MATCH (p:Paper)-[:PAPER_HAS_BODY_TEXT]->(b:Body_text)  WHERE p.title IS NOT NULL AND p.title CONTAINS("Virus") RETURN count(p)
+```
+
 ## Patents
 
 - Search patents with string against a textindex and get a hit score
