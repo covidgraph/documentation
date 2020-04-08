@@ -11,14 +11,16 @@ WITH p.title as title,collect({txt:t.text, pos:r.position}) as text
 UNWIND text as t
 WITH title, t
 order by t.pos
-RETURN title, collect(t.txt) limit 4
+RETURN title, collect(t.txt) 
+limit 4
 ```
 
 - Get Papers and Authors
 
 ```cypher
 MATCH (a:Author)<-[:AUTHOR_HAS_AUTHOR]-(:Author:CollectionHub)<-[:METADATA_HAS_AUTHOR]-(:Metadata)<-[:PAPER_HAS_METADATA]-(p:Paper)
-RETURN a, p, apoc.create.vRelationship(a, 'AUTHORED',{}, p) as vrel limit 100
+RETURN a, p, apoc.create.vRelationship(a, 'AUTHORED',{}, p) as vrel 
+limit 100
 ```
 
 - Genes connected to papers
@@ -32,20 +34,29 @@ limit 10
 - Number of authors by location/region
 
 ```cypher
-MATCH (loc:Location)<-[:AFFILIATION_HAS_LOCATION]-(aff:Affiliation)-[:AUTHOR_HAS_AFFILIATION]-(a:Author) WHERE loc.country IS NOT NULL RETURN loc.country as country, loc.region as region, count(distinct a.email) AS NbrOfAuthors 
+MATCH (loc:Location)<-[:AFFILIATION_HAS_LOCATION]-(aff:Affiliation)-[:AUTHOR_HAS_AFFILIATION]-(a:Author) 
+WHERE loc.country IS NOT NULL 
+RETURN loc.country as country, loc.region as region, count(distinct a.email) AS NbrOfAuthors 
 ORDER BY count(distinct a.email) DESC
 ```
 
 - Titles and dates of papers whose body text contains a user-specified keyword (e.g. Virus), ordered by date of publication. 
 
 ```cypher
-MATCH (p:Paper)-[:PAPER_HAS_BODY_TEXT]->(b:Body_text)  WHERE p.title IS NOT NULL AND p.title CONTAINS("Virus") RETURN p.title, p.publish_time ORDER BY p.publish_time DESC LIMIT 20
+MATCH (p:Paper)-[:PAPER_HAS_BODY_TEXT]->(b:Body_text)  
+WHERE p.title IS NOT NULL AND p.title CONTAINS("Virus") 
+RETURN p.title, p.publish_time 
+ORDER BY p.publish_time DESC 
+LIMIT 20
 ```
 
 - Number of papers whose body text contains a user-specified keyword (e.g. Virus).
 
 ```cypher
-MATCH (p:Paper)-[:PAPER_HAS_BODY_TEXT]->(b:Body_text)  WHERE p.title IS NOT NULL AND p.title CONTAINS("Virus") RETURN count(p)
+MATCH (p:Paper)-[:PAPER_HAS_BODY_TEXT]->(b:Body_text)  
+WHERE p.title IS NOT NULL AND p.title CONTAINS("Virus") 
+RETURN count(p)
+LIMIT 20
 ```
 
 ## Patents
