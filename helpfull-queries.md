@@ -61,6 +61,12 @@ LIMIT 20
 
 ## Patents
 
+- Find gene names mentioned in patents
+
+```cypher
+match(gs1:GeneSymbol)<-[:MENTIONS]-(f1:Fragment)<-[:HAS_FRAGMENT]-(pa:PatentAbstract)<-[:HAS_ABSTRACT]-(p:Patent)-[:HAS_TITLE|:HAS_CLAIM]-(pc)-[:HAS_FRAGMENT]->(f2:Fragment)-[:MENTIONS]->(gs2:GeneSymbol) return pa,p, pc,f1,f2,gs1,gs2 limit 300
+```
+
 - Search patents with string against a textindex and get a hit score
 
 ```cypher
