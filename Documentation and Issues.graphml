@@ -912,8 +912,8 @@ Redirect to /documentation/wiki<y:LabelModel><y:SmartNodeLabelModel distance="4.
                       <y:Geometry height="43.38100051879883" width="344.0624999999998" x="1271.1720847206202" y="1639.112302160188"/>
                       <y:Fill color="#FFFFFF" transparent="false"/>
                       <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
-                      <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="36.59375" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="232.1083984375" x="55.977050781249886" xml:space="preserve" y="3.393625259399414">General Project Issues
-* Use Cases [LABEL = Use Case]<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
+                      <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="36.59375" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="268.796875" x="37.6328125" xml:space="preserve" y="3.393625259399414">Issues relating to the Covidgraph.org 
+Structr website.<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
                       <y:Shape type="roundrectangle"/>
                     </y:ShapeNode>
                   </data>
@@ -1630,7 +1630,7 @@ complete<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:M
                   <y:Geometry height="214.53386864355048" width="287.5587813024847" x="-226.19347379631813" y="931.5629503119844"/>
                   <y:Fill color="#F5F5F5" transparent="false"/>
                   <y:BorderStyle color="#000000" type="dashed" width="1.0"/>
-                  <y:NodeLabel alignment="right" autoSizePolicy="node_width" backgroundColor="#EBEBEB" borderDistance="0.0" fontFamily="Dialog" fontSize="25" fontStyle="plain" hasLineColor="false" height="62.203125" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true" width="287.5587813024847" x="0.0" xml:space="preserve" y="0.0">Covid*Graph
+                  <y:NodeLabel alignment="right" autoSizePolicy="node_width" backgroundColor="#CCFFFF" borderDistance="0.0" fontFamily="Dialog" fontSize="25" fontStyle="plain" hasLineColor="false" height="62.203125" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true" width="287.5587813024847" x="0.0" xml:space="preserve" y="0.0">Covid*Graph
 (Live Server)</y:NodeLabel>
                   <y:Shape type="roundrectangle"/>
                   <y:State closed="false" closedHeight="50.0" closedWidth="50.0" innerGraphDisplayEnabled="false"/>
