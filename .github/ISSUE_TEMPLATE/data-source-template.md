@@ -1,12 +1,13 @@
 ---
 name: Data Source Template
 about: Use this template to log new data sources.
-title: ''
+title: Data Source Name
 labels: data source
 assignees: ''
 
 ---
 
+`Please 'Create an Epic'`
 ### Data Source
 (url to data source)
 
