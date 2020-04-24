@@ -65,10 +65,17 @@ LIMIT 20
 
 ```cypher
 match path=(e:Entity)<-[x:APPLICANT]-(p:Patent)-[y:HAS_CLAIM|:HAS_ABSTRACT|:HAS_TITLE]->(pa)-[z:HAS_FRAGMENT]->(ff:Fragment)-[m:MENTIONS]->(syn:GeneSymbol)-[:SYNONYM]->(gs:GeneSymbol)<-[:MAPS]-(g:Gene)-[:CODES]->(tc:Transcript)-[:CODES]->(pro:Protein)
-where e.idLower starts with 'novar' 
-return path limit 40
+where e.idLower starts with $company and exists(pro.name)
+return path limit 100
 ```
 
+- Does company xyz work on protein xxx?
+
+```cypher
+match path=(e:Entity)<-[x:APPLICANT]-(p:Patent)-[y:HAS_CLAIM|:HAS_ABSTRACT|:HAS_TITLE]->(pa)-[z:HAS_FRAGMENT]->(ff:Fragment)-[m:MENTIONS]->(syn:GeneSymbol)-[:SYNONYM]->(gs:GeneSymbol)<-[:MAPS]-(g:Gene)-[:CODES]->(tc:Transcript)-[:CODES]->(pro:Protein)
+where e.idLower starts with $company and pro.name contains $protein
+return path limit 40
+```
 - Find gene names mentioned in patents
 
 ```cypher
