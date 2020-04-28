@@ -54,7 +54,7 @@ If you agree, CovidGraph will share your data with our partner companies so that
 - Structr
 - derivo
 - Neo4j
-- Linkuriuos
+- Linkurious
 - Graphileon
 - Helomics
 - Aarhus University
