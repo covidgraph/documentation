@@ -109,15 +109,14 @@ If you have any questions about CovidGraph’s privacy policy, the data we hold 
 
 Email us at: impressum@kaiser-preusse.com
 
-Call us: +49 163 77 39 234
+Call us: +49 1637739234
 
 Or write to us at:
 
-Kaiser & Preusse
-Schwabentorring 10
-79098 Freiburg
+Kaiser & Preusse<br>
+Schwabentorring 10<br>
+79098 Freiburg<br>
 Germany
-
 ### How to contact the appropriate authority
 
 Should you wish to report a complaint or if you feel that CovidGraph has not addressed your concern in a satisfactory manner, you may contact the Information Commissioner’s Office.
@@ -126,7 +125,7 @@ Email: impressum@kaiser-preusse.com
 
 Address:
 
-Kaiser & Preusse
-Schwabentorring 10
-79098 Freiburg
+Kaiser & Preusse<br>
+Schwabentorring 10<br>
+79098 Freiburg<br>
 Germany
