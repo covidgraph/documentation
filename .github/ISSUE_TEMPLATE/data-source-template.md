@@ -7,7 +7,7 @@ assignees: ''
 
 ---
 
-```Data Sources are tracked as 'Epics' in ZenHub which allows us to group and find any related issues. To create an 'Epic' please **select 'Create an Epic'** below and NOT 'Create an Issue'.```
+Please select 'Create an Epic' and NOT issue below.
 
 ### Data Source
 (url to data source)
