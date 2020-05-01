@@ -2,7 +2,7 @@
 name: Data Source Template
 about: Use this template to log new data sources.
 title: Data Source Name
-labels: data source
+labels: data source, suggested
 assignees: ''
 
 ---
