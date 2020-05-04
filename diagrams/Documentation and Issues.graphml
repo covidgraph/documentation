@@ -174,7 +174,7 @@
                       <y:Geometry height="76.67026462395529" width="344.0624999999998" x="1281.1947678954552" y="1312.6866295586144"/>
                       <y:Fill color="#FFFFFF" transparent="false"/>
                       <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
-                      <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="69.1875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="317.728515625" x="13.1669921875" xml:space="preserve" y="3.741382311977759">Definitive List of Data Sources 
+                      <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="69.1875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="317.728515625" x="13.1669921875" xml:space="preserve" y="3.7413823119775316">Definitive List of Data Sources 
 * Data Source [LABEL = Data Source] 
 * Suggested source [LABEL = Enhancement]
 * Loaded source [LABEL = Loaded]<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
@@ -327,8 +327,9 @@
                           <y:Geometry height="58.38100051879883" width="344.0624999999998" x="559.1233409825898" y="1023.4366575245995"/>
                           <y:Fill color="#FFFFFF" transparent="false"/>
                           <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
-                          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="36.59375" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="149.7080078125" x="97.17724609374989" xml:space="preserve" y="10.893625259399414">Data Loading Scripts
-* README<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
+                          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="52.890625" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="276.275390625" x="33.893554687499886" xml:space="preserve" y="2.745187759399414">Data Loading Scripts
+* README
+* motherlode/data_sources_registry.py<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
                           <y:Shape type="roundrectangle"/>
                         </y:ShapeNode>
                       </data>
@@ -1012,7 +1013,7 @@ Redirect to /documentation/wiki<y:LabelModel><y:SmartNodeLabelModel distance="4.
               <y:Geometry height="408.09763516833044" width="692.8565700141991" x="-764.837977927479" y="1722.4607252257792"/>
               <y:Fill color="#CCCCFF" transparent="false"/>
               <y:BorderStyle color="#000000" type="line" width="1.0"/>
-              <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" hasText="false" height="4.0" horizontalTextPosition="center" iconTextGap="4" modelName="sandwich" modelPosition="s" textColor="#000000" verticalTextPosition="bottom" visible="true" width="4.0" x="344.42828500709953" y="412.0976351683305"/>
+              <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" hasText="false" height="4.0" horizontalTextPosition="center" iconTextGap="4" modelName="sandwich" modelPosition="s" textColor="#000000" verticalTextPosition="bottom" visible="true" width="4.0" x="344.42828500709953" y="412.09763516833027"/>
               <y:Image alphaImage="true" refid="1"/>
             </y:ImageNode>
           </data>
