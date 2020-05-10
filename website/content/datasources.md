@@ -1,22 +1,24 @@
-# COVID-19 Open Research Dataset (CORD-19)
+# datasources
+
+## COVID-19 Open Research Dataset \(CORD-19\)
+
 Collection of COVID-19 related scientific papers with metadata like authors, affiliations, references.
 
-Source of the dataset: https://pages.semanticscholar.org/coronavirus-research
+Source of the dataset: [https://pages.semanticscholar.org/coronavirus-research](https://pages.semanticscholar.org/coronavirus-research)
 
-Kaggle challenge: https://www.kaggle.com/allen-institute-for-ai/CORD-19-research-challenge
+Kaggle challenge: [https://www.kaggle.com/allen-institute-for-ai/CORD-19-research-challenge](https://www.kaggle.com/allen-institute-for-ai/CORD-19-research-challenge)
 
+## Covid-19 cases from John Hopkins University
 
+John Hopkins University \(JHU\) aggregates data from WHO and other health organizations in a daily report. It contains the number of confirmed cases, deaths and recovered patients.
 
-# Covid-19 cases from John Hopkins University
+Dashboard: [https://coronavirus.jhu.edu/map.html](https://coronavirus.jhu.edu/map.html)
 
-John Hopkins University (JHU) aggregates data from WHO and other health organizations in a daily report. It contains the number of confirmed cases, deaths and recovered patients.
+Data: [https://github.com/CSSEGISandData/COVID-19](https://github.com/CSSEGISandData/COVID-19)
 
-Dashboard: https://coronavirus.jhu.edu/map.html
+## Population data from the UN
 
-Data: https://github.com/CSSEGISandData/COVID-19
+The UN gathers data on world population statistics and publishes the world population prospects: [https://population.un.org/wpp/](https://population.un.org/wpp/)
 
-# Population data from the UN
+The latest data set in CSV format can be found here: [https://population.un.org/wpp/Download/Standard/CSV/](https://population.un.org/wpp/Download/Standard/CSV/)
 
-The UN gathers data on world population statistics and publishes the world population prospects: https://population.un.org/wpp/
-
-The latest data set in CSV format can be found here: https://population.un.org/wpp/Download/Standard/CSV/
