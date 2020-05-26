@@ -4,12 +4,15 @@
 
 ## Helpful queries on the CovidGraph
 
+
+⛔ This document needs to be updated to newest datamodel
+
 ### Papers
 
 * List Fulltext papers with title
 
 ```text
-MATCH (p:Paper)-[pr:PAPER_HAS_BODY_TEXT]->(c:Body_text:CollectionHub)-[r:BODY_TEXT_HAS_BODY_TEXT]->(t:Body_text)
+MATCH (p:Paper)-[pr:PAPER_HAS_BODYTEXTCOLLECTION]->(c:BodyTextCollection)-[r:BODYTEXTCOLLECTION_HAS_BODYTEXT]->(t:BodyText)
 WITH p.title as title,collect({txt:t.text, pos:r.position}) as text
 UNWIND text as t
 WITH title, t
@@ -21,20 +24,26 @@ limit 4
 * Get Papers and Authors
 
 ```text
-MATCH (a:Author)<-[:AUTHOR_HAS_AUTHOR]-(:Author:CollectionHub)<-[:METADATA_HAS_AUTHOR]-(:Metadata)<-[:PAPER_HAS_METADATA]-(p:Paper)
+MATCH (a:Author)<-[:AUTHORCOLLECTION_HAS_AUTHOR]-(:AuthorCollection)<-[:PAPER_HAS_AUTHORCOLLECTION]-(p:Paper)
 RETURN a, p, apoc.create.vRelationship(a, 'AUTHORED',{}, p) as vrel 
 limit 100
 ```
 
 * Genes connected to papers
 
+⛔ Not working atm
+
 ```text
-MATCH (p:Paper)  MATCH (p)-[:MENTIONS]->(g:GeneSymbol)
-RETURN p,g as result ORDER BY g.sid
+MATCH (p:Paper)
+MATCH (p)-[:PAPER_HAS_BODYTEXTCOLLECTION]->(:BodyTextCollection)-[:BODYTEXTCOLLECTION_HAS_BODYTEXT]->(:BodyText)-[:HAS_FRAGMENT]->(f:Fragment)-[:MENTIONS]->(g:GeneSymbol) with collect(distinct g.sid) as gsid
+RETURN gsid as result order by gsid
 limit 10
 ```
 
 * Number of authors by location/region
+
+
+
 
 ```text
 MATCH (loc:Location)<-[:AFFILIATION_HAS_LOCATION]-(aff:Affiliation)-[:AUTHOR_HAS_AFFILIATION]-(a:Author) 
@@ -45,6 +54,8 @@ ORDER BY count(distinct a.email) DESC
 
 * Titles and dates of papers whose body text contains a user-specified keyword \(e.g. Virus\), ordered by date of publication. 
 
+⛔ Not working atm
+
 ```text
 MATCH (p:Paper)-[:PAPER_HAS_BODY_TEXT]->(b:Body_text)  
 WHERE p.title IS NOT NULL AND p.title CONTAINS("Virus") 
@@ -54,6 +65,9 @@ LIMIT 20
 ```
 
 * Number of papers whose body text contains a user-specified keyword \(e.g. Virus\).
+
+
+⛔ Not working atm
 
 ```text
 MATCH (p:Paper)-[:PAPER_HAS_BODY_TEXT]->(b:Body_text)  
@@ -66,6 +80,9 @@ LIMIT 20
 
 * Find genes and proteins that are mentioned in patents
 
+
+⛔ Not working atm
+
 ```text
 match path=(e:Entity)<-[x:APPLICANT]-(p:Patent)-[y:HAS_CLAIM|:HAS_ABSTRACT|:HAS_TITLE]->(pa)-[z:HAS_FRAGMENT]->(ff:Fragment)-[m:MENTIONS]->(syn:GeneSymbol)-[:SYNONYM]->(gs:GeneSymbol)<-[:MAPS]-(g:Gene)-[:CODES]->(tc:Transcript)-[:CODES]->(pro:Protein)
 where e.idLower starts with $company and exists(pro.name)
@@ -73,6 +90,9 @@ return path limit 100
 ```
 
 * Does company xyz work on protein xxx?
+
+
+⛔ Not working atm
 
 ```text
 match path=(e:Entity)<-[x:APPLICANT]-(p:Patent)-[y:HAS_CLAIM|:HAS_ABSTRACT|:HAS_TITLE]->(pa)-[z:HAS_FRAGMENT]->(ff:Fragment)-[m:MENTIONS]->(syn:GeneSymbol)-[:SYNONYM]->(gs:GeneSymbol)<-[:MAPS]-(g:Gene)-[:CODES]->(tc:Transcript)-[:CODES]->(pro:Protein)
