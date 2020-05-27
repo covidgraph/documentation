@@ -7,6 +7,13 @@
 
 Queries marked with a ⛔ need a review by its maintainer
 
+### Data model
+
+call db.schema.visualization() yield nodes, relationships
+return 
+[x in nodes where apoc.any.properties(x).name in ['Abstract', 'AbstractCollection', 'Affiliation', 'AgeGroup', 'Author', 'AuthorCollection', 'BodyText', 'BodyTextCollection', 'Citation', 'City', 'ClinicalTrial', 'Country', 'DailyReport', 'Entity', 'ExclusionCriteria', 'Facility', 'GOTerm', 'Gene', 'GeneSymbol', 'GtexDetailedTissue', 'GtexTissue', 'InclusionCriteria', 'Location', 'Paper', 'Patent', 'PatentAbstract', 'PatentClaim', 'PatentDescription', 'PatentLiteratureCitation', 'PatentNumber', 'PatentTitle', 'Pathway', 'Phase', 'Protein', 'Province', 'Reference', 'ReferenceCollection', 'Transcript','Fragment']],
+[x in relationships where not type(x) in ['INVENTOR']]
+
 ### Papers
 
 * List Fulltext papers with title
