@@ -1,4 +1,4 @@
-# helpfull-queries
+# helpful-queries
 
 [Back to CovidGraph Wiki](https://github.com/covidgraph/documentation/wiki)
 
