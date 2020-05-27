@@ -94,7 +94,6 @@ return path limit 40
 
 * Find gene names mentioned in patents
 
-⛔ Not working atm
 
 ```cypher
 match (p:Patent)-[x:PATENT_HAS_PATENTCLAIM|:PATENT_HAS_PATENTABSTRACT|:PATENT_HAS_PATENTTITLE]-(pct)-[:HAS_FRAGMENT]->(f2:Fragment)-[:MENTIONS]->(gs2:GeneSymbol) return p,x,pct,gs2 limit 300
