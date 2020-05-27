@@ -135,8 +135,11 @@ limit 10
 
 * This shows the previous and next fragment in the result 
 
+
+⛔ Freezes atm
+
 ```cypher
-call db.index.fulltext.queryNodes("fragments","corona and virus") 
+call db.index.fulltext.queryNodes("fragmentGeneSymbol","corona and virus") 
 yield node as f,score match (f)--(px)--(p:Patent) 
 match (fp:Fragment)-[:NEXT]->(f),(f)-[:NEXT]->(fn:Fragment) 
 return f.kind,fp.text,f.text,fn.text,p.id,score 
