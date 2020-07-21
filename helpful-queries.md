@@ -177,7 +177,7 @@ YIELD graphName, nodeCount, relationshipCount, createMillis;
 CALL gds.pageRank.stream('Authors_Influence') YIELD nodeId, score RETURN gds.util.asNode(nodeId).first, gds.util.asNode(nodeId).last, score ORDER BY score DESC
 ```
 
-## Bloom queries
+### Bloom queries
 
 * Text containing keywords x and y
 
@@ -186,4 +186,13 @@ CALL db.index.fulltext.queryNodes("textOfPapersAndPatents", '$1 AND $2') YIELD n
 match (node)<-[:HAS_FRAGMENT]-()<-[:ABSTRACTCOLLECTION_HAS_ABSTRACT|PAPER_HAS_ABSTRACTCOLLECTION|PATENT_HAS_PATENTTITLE|PATENT_HAS_PATENTCLAIM|PATENT_HAS_PATENTABSTRACT*1..2]-(pp) where node:Fragment and not node:AbstractCollection
 and not node:BodyText
 RETURN pp  limit 50
+```
+
+### NLP BERN Entities
+
+* List entity types with count and if they are linked (external ids)
+
+```cypher
+MATCH (n:NamedEntity)
+RETURN n.type as type, exists(n.external_ids) as external_ids, count(*)
 ```
