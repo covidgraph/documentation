@@ -18,6 +18,11 @@ return
 
 ### Papers
 
+* Fulltext search in papers and patents
+CALL db.index.fulltext.queryNodes("textOfPapersAndPatents", 'corona') YIELD node
+match (node)<-[:HAS_FRAGMENT]-()<-[:ABSTRACTCOLLECTION_HAS_ABSTRACT|PAPER_HAS_ABSTRACTCOLLECTION|PATENT_HAS_PATENTTITLE|PATENT_HAS_PATENTCLAIM|PATENT_HAS_PATENTABSTRACT*1..2]-(pp) where node:Fragment and not node:AbstractCollection
+RETURN pp  limit 50
+
 * List Fulltext papers with title
 
 ```cypher
