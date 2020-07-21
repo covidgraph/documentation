@@ -177,3 +177,13 @@ YIELD graphName, nodeCount, relationshipCount, createMillis;
 CALL gds.pageRank.stream('Authors_Influence') YIELD nodeId, score RETURN gds.util.asNode(nodeId).first, gds.util.asNode(nodeId).last, score ORDER BY score DESC
 ```
 
+## Bloom queries
+
+* Text containing keywords x and y
+
+```cypher
+CALL db.index.fulltext.queryNodes("textOfPapersAndPatents", '$1 AND $2') YIELD node
+match (node)<-[:HAS_FRAGMENT]-()<-[:ABSTRACTCOLLECTION_HAS_ABSTRACT|PAPER_HAS_ABSTRACTCOLLECTION|PATENT_HAS_PATENTTITLE|PATENT_HAS_PATENTCLAIM|PATENT_HAS_PATENTABSTRACT*1..2]-(pp) where node:Fragment and not node:AbstractCollection
+and not node:BodyText
+RETURN pp  limit 50
+```
