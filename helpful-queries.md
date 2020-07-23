@@ -18,10 +18,10 @@ return
 
 ### Papers
 
-* Fulltext search in papers and patents
-CALL db.index.fulltext.queryNodes("textOfPapersAndPatents", 'corona') YIELD node
-match (node)<-[:HAS_FRAGMENT]-()<-[:ABSTRACTCOLLECTION_HAS_ABSTRACT|PAPER_HAS_ABSTRACTCOLLECTION|PATENT_HAS_PATENTTITLE|PATENT_HAS_PATENTCLAIM|PATENT_HAS_PATENTABSTRACT*1..2]-(pp) where node:Fragment and not node:AbstractCollection
-RETURN pp  limit 50
+* Fulltext search in papers 
+CALL db.index.fulltext.queryNodes("textOfPapersAndPatents", $1) YIELD node
+match (node)<-[:HAS_FRAGMENT]-(ab:Abstract)<-[:ABSTRACTCOLLECTION_HAS_ABSTRACT]-(abc:AbstractCollection)<-[:PAPER_HAS_ABSTRACTCOLLECTION]-(paper:Paper) 
+RETURN paper
 
 * List Fulltext papers with title
 
@@ -177,7 +177,36 @@ YIELD graphName, nodeCount, relationshipCount, createMillis;
 CALL gds.pageRank.stream('Authors_Influence') YIELD nodeId, score RETURN gds.util.asNode(nodeId).first, gds.util.asNode(nodeId).last, score ORDER BY score DESC
 ```
 
+```cypher
+CALL db.index.fulltext.queryNodes("AuthorFullTextIndex", $word) YIELD node
+RETURN node
+```
+
 ### Bloom queries
+
+* Look for patents
+
+```cypher
+CALL db.index.fulltext.queryNodes("textOfPapersAndPatents", $1) YIELD node
+with node
+where node:Patent
+return node
+```
+
+* Look for papers
+
+```cypher
+CALL db.index.fulltext.queryNodes("textOfPapersAndPatents", $1) YIELD node
+match (node)<-[:HAS_FRAGMENT]-(ab:Abstract)<-[:ABSTRACTCOLLECTION_HAS_ABSTRACT]-(abc:AbstractCollection)<-[:PAPER_HAS_ABSTRACTCOLLECTION]-(paper:Paper) 
+RETURN paper
+```
+
+* Look for authors
+
+```cypher
+CALL db.index.fulltext.queryNodes("AuthorFullTextIndex", $word) YIELD node
+RETURN node
+```
 
 * Text containing keywords x and y
 
