@@ -158,7 +158,7 @@ Number</y:NodeLabel>
               <y:Geometry height="1867.9592354401643" width="1961.0117160894852" x="-511.49728530700554" y="1064.1211939224736"/>
               <y:Fill color="#C0C0C0" transparent="false"/>
               <y:BorderStyle color="#FFFFFF" type="line" width="3.0"/>
-              <y:NodeLabel alignment="left" autoSizePolicy="node_width" backgroundColor="#072B39" borderDistance="0.0" fontFamily="Dialog" fontSize="80" fontStyle="plain" hasLineColor="false" height="97.125" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#FFFFFF" verticalTextPosition="bottom" visible="true" width="1961.0117160894852" x="0.0" xml:space="preserve" y="0.0">Pre-Print Papers x 51,000</y:NodeLabel>
+              <y:NodeLabel alignment="left" autoSizePolicy="node_width" backgroundColor="#072B39" borderDistance="0.0" fontFamily="Dialog" fontSize="80" fontStyle="plain" hasLineColor="false" height="97.125" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#FFFFFF" verticalTextPosition="bottom" visible="true" width="1961.0117160894852" x="0.0" xml:space="preserve" y="0.0">Papers x 51,000</y:NodeLabel>
               <y:Shape type="roundrectangle"/>
               <y:State closed="false" closedHeight="50.0" closedWidth="50.0" innerGraphDisplayEnabled="false"/>
               <y:Insets bottom="15" bottomF="15.0" left="15" leftF="15.0" right="15" rightF="15.0" top="15" topF="15.0"/>
@@ -168,7 +168,7 @@ Number</y:NodeLabel>
               <y:Geometry height="50.0" width="50.0" x="-511.49728530700554" y="1064.1211939224736"/>
               <y:Fill color="#F5F5F5" transparent="false"/>
               <y:BorderStyle color="#000000" type="dashed" width="1.0"/>
-              <y:NodeLabel alignment="right" autoSizePolicy="node_width" backgroundColor="#EBEBEB" borderDistance="0.0" fontFamily="Dialog" fontSize="15" fontStyle="plain" hasLineColor="false" height="21.4609375" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true" width="195.25732421875" x="-72.628662109375" xml:space="preserve" y="0.0">Pre-Print Papers x 51,000</y:NodeLabel>
+              <y:NodeLabel alignment="right" autoSizePolicy="node_width" backgroundColor="#EBEBEB" borderDistance="0.0" fontFamily="Dialog" fontSize="15" fontStyle="plain" hasLineColor="false" height="21.4609375" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true" width="125.86767578125" x="-37.933837890625" xml:space="preserve" y="0.0">Papers x 51,000</y:NodeLabel>
               <y:Shape type="roundrectangle"/>
               <y:State closed="true" closedHeight="50.0" closedWidth="50.0" innerGraphDisplayEnabled="false"/>
               <y:Insets bottom="5" bottomF="5.0" left="5" leftF="5.0" right="5" rightF="5.0" top="5" topF="5.0"/>
