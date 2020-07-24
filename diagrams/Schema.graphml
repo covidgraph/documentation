@@ -1681,7 +1681,7 @@ COLLECTION<y:LabelModel><y:RotatedSliderEdgeLabelModel angle="0.0" autoRotationE
         <y:PolyLineEdge>
           <y:Path sx="-1.3642420526593924E-12" sy="0.0" tx="0.0" ty="0.0"/>
           <y:LineStyle color="#FFFFFF" type="line" width="7.0"/>
-          <y:Arrows source="none" target="standard"/>
+          <y:Arrows source="standard" target="standard"/>
           <y:EdgeLabel alignment="center" anchorX="38.218595526190256" anchorY="57.89509128010434" backgroundColor="#ADADAD" configuration="AutoFlippingLabel" distance="2.0" fontFamily="Dialog" fontSize="25" fontStyle="plain" hasLineColor="false" height="33.1015625" horizontalTextPosition="center" iconTextGap="4" modelName="custom" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" upX="0.6790200671944865" upY="-0.7341197098206771" verticalTextPosition="bottom" visible="true" width="52.291015625" x="38.218595526190256" xml:space="preserve" y="33.594581822993334">IS A<y:LabelModel><y:RotatedSliderEdgeLabelModel angle="0.0" autoRotationEnabled="true" distance="5.0" distanceRelativeToEdge="true" mode="center_slider"/></y:LabelModel><y:ModelParameter><y:RotatedSliderEdgeLabelModelParameter invertingSign="false" ratio="0.0" segment="0"/></y:ModelParameter><y:PreferredPlacementDescriptor angle="0.0" angleOffsetOnRightSide="0" angleReference="absolute" angleRotationOnRightSide="co" distance="-1.0" frozen="true" placement="anywhere" side="anywhere" sideReference="relative_to_edge_flow"/></y:EdgeLabel>
           <y:BendStyle smoothed="false"/>
         </y:PolyLineEdge>
