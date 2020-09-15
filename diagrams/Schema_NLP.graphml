@@ -23,7 +23,7 @@
               <y:Geometry height="1268.217268480049" width="1076.6719186827954" x="-507.467344422168" y="-255.7014193870672"/>
               <y:Fill color="#C0C0C0" transparent="false"/>
               <y:BorderStyle color="#FFFFFF" type="line" width="3.0"/>
-              <y:NodeLabel alignment="left" autoSizePolicy="node_width" backgroundColor="#234508" borderDistance="0.0" fontFamily="Dialog" fontSize="80" fontStyle="plain" hasLineColor="false" height="97.125" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#FFFFFF" verticalTextPosition="bottom" visible="true" width="1076.6719186827954" x="0.0" xml:space="preserve" y="0.0">Patents x 32,000</y:NodeLabel>
+              <y:NodeLabel alignment="left" autoSizePolicy="node_width" backgroundColor="#234508" borderDistance="0.0" fontFamily="Dialog" fontSize="80" fontStyle="plain" hasLineColor="false" height="97.125" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#FFFFFF" verticalTextPosition="bottom" visible="true" width="1076.6719186827954" x="0.0" xml:space="preserve" y="0.0">Patents x 32,080</y:NodeLabel>
               <y:Shape type="roundrectangle"/>
               <y:State closed="false" closedHeight="50.0" closedWidth="50.0" innerGraphDisplayEnabled="false"/>
               <y:Insets bottom="15" bottomF="15.0" left="15" leftF="15.0" right="15" rightF="15.0" top="15" topF="15.0"/>
@@ -33,7 +33,7 @@
               <y:Geometry height="50.0" width="50.0" x="-633.3954973118279" y="-261.27402553763443"/>
               <y:Fill color="#F5F5F5" transparent="false"/>
               <y:BorderStyle color="#000000" type="dashed" width="1.0"/>
-              <y:NodeLabel alignment="right" autoSizePolicy="node_width" backgroundColor="#EBEBEB" borderDistance="0.0" fontFamily="Dialog" fontSize="15" fontStyle="plain" hasLineColor="false" height="21.4609375" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true" width="131.44873046875" x="-40.724365234375" xml:space="preserve" y="0.0">Patents x 32,000</y:NodeLabel>
+              <y:NodeLabel alignment="right" autoSizePolicy="node_width" backgroundColor="#EBEBEB" borderDistance="0.0" fontFamily="Dialog" fontSize="15" fontStyle="plain" hasLineColor="false" height="21.4609375" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true" width="131.44873046875" x="-40.724365234375" xml:space="preserve" y="0.0">Patents x 32,080</y:NodeLabel>
               <y:Shape type="roundrectangle"/>
               <y:State closed="true" closedHeight="50.0" closedWidth="50.0" innerGraphDisplayEnabled="false"/>
               <y:Insets bottom="5" bottomF="5.0" left="5" leftF="5.0" right="5" rightF="5.0" top="5" topF="5.0"/>
@@ -147,7 +147,7 @@ Number</y:NodeLabel>
               <y:Geometry height="1870.5175129312684" width="1979.0121461970123" x="-511.49728530700554" y="1064.1211939224736"/>
               <y:Fill color="#C0C0C0" transparent="false"/>
               <y:BorderStyle color="#FFFFFF" type="line" width="3.0"/>
-              <y:NodeLabel alignment="left" autoSizePolicy="node_width" backgroundColor="#072B39" borderDistance="0.0" fontFamily="Dialog" fontSize="80" fontStyle="plain" hasLineColor="false" height="97.125" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#FFFFFF" verticalTextPosition="bottom" visible="true" width="1979.0121461970123" x="0.0" xml:space="preserve" y="0.0">Papers x 51,000</y:NodeLabel>
+              <y:NodeLabel alignment="left" autoSizePolicy="node_width" backgroundColor="#072B39" borderDistance="0.0" fontFamily="Dialog" fontSize="80" fontStyle="plain" hasLineColor="false" height="97.125" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#FFFFFF" verticalTextPosition="bottom" visible="true" width="1979.0121461970123" x="0.0" xml:space="preserve" y="0.0">Papers x 128,053</y:NodeLabel>
               <y:Shape type="roundrectangle"/>
               <y:State closed="false" closedHeight="50.0" closedWidth="50.0" innerGraphDisplayEnabled="false"/>
               <y:Insets bottom="15" bottomF="15.0" left="15" leftF="15.0" right="15" rightF="15.0" top="15" topF="15.0"/>
@@ -157,7 +157,7 @@ Number</y:NodeLabel>
               <y:Geometry height="50.0" width="50.0" x="-511.49728530700554" y="1064.1211939224736"/>
               <y:Fill color="#F5F5F5" transparent="false"/>
               <y:BorderStyle color="#000000" type="dashed" width="1.0"/>
-              <y:NodeLabel alignment="right" autoSizePolicy="node_width" backgroundColor="#EBEBEB" borderDistance="0.0" fontFamily="Dialog" fontSize="15" fontStyle="plain" hasLineColor="false" height="21.4609375" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true" width="125.86767578125" x="-37.933837890625" xml:space="preserve" y="0.0">Papers x 51,000</y:NodeLabel>
+              <y:NodeLabel alignment="right" autoSizePolicy="node_width" backgroundColor="#EBEBEB" borderDistance="0.0" fontFamily="Dialog" fontSize="15" fontStyle="plain" hasLineColor="false" height="21.4609375" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true" width="135.4111328125" x="-42.70556640625" xml:space="preserve" y="0.0">Papers x 128,053</y:NodeLabel>
               <y:Shape type="roundrectangle"/>
               <y:State closed="true" closedHeight="50.0" closedWidth="50.0" innerGraphDisplayEnabled="false"/>
               <y:Insets bottom="5" bottomF="5.0" left="5" leftF="5.0" right="5" rightF="5.0" top="5" topF="5.0"/>
@@ -206,7 +206,8 @@ Number</y:NodeLabel>
               <y:Geometry height="235.0" width="235.0" x="281.7206452434226" y="2159.9631581742497"/>
               <y:Fill color="#072B39" transparent="false"/>
               <y:BorderStyle color="#FFFFFF" raised="false" type="line" width="3.0"/>
-              <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="35" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="44.7421875" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="c" textColor="#FFFFFF" verticalTextPosition="bottom" visible="true" width="121.83447265625" x="56.582763671875" xml:space="preserve" y="95.12890625">Author</y:NodeLabel>
+              <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="35" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="85.484375" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="c" textColor="#FFFFFF" verticalTextPosition="bottom" visible="true" width="180.572265625" x="27.2138671875" xml:space="preserve" y="74.7578125">Author
+x 477,975</y:NodeLabel>
               <y:Shape type="ellipse"/>
             </y:ShapeNode>
           </data>
@@ -689,7 +690,7 @@ Symbol</y:NodeLabel>
                   <y:Geometry height="512.7005374351372" width="503.1818900009848" x="2119.7672114971974" y="434.62346584613215"/>
                   <y:Fill color="#C0C0C0" transparent="false"/>
                   <y:BorderStyle color="#FFFFFF" type="line" width="3.0"/>
-                  <y:NodeLabel alignment="right" autoSizePolicy="node_width" backgroundColor="#C0C0C0" borderDistance="0.0" fontFamily="Dialog" fontSize="80" fontStyle="plain" hasLineColor="false" height="97.125" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#360C16" verticalTextPosition="bottom" visible="true" width="503.1818900009848" x="0.0" xml:space="preserve" y="0.0">128,000</y:NodeLabel>
+                  <y:NodeLabel alignment="right" autoSizePolicy="node_width" backgroundColor="#C0C0C0" borderDistance="0.0" fontFamily="Dialog" fontSize="80" fontStyle="plain" hasLineColor="false" height="97.125" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#360C16" verticalTextPosition="bottom" visible="true" width="503.1818900009848" x="0.0" xml:space="preserve" y="0.0">128,053</y:NodeLabel>
                   <y:Shape type="roundrectangle"/>
                   <y:State closed="false" closedHeight="50.0" closedWidth="50.0" innerGraphDisplayEnabled="false"/>
                   <y:Insets bottom="15" bottomF="15.0" left="15" leftF="15.0" right="15" rightF="15.0" top="15" topF="15.0"/>
@@ -699,7 +700,7 @@ Symbol</y:NodeLabel>
                   <y:Geometry height="50.0" width="50.0" x="-633.3954973118279" y="-261.27402553763443"/>
                   <y:Fill color="#F5F5F5" transparent="false"/>
                   <y:BorderStyle color="#000000" type="dashed" width="1.0"/>
-                  <y:NodeLabel alignment="right" autoSizePolicy="node_width" backgroundColor="#EBEBEB" borderDistance="0.0" fontFamily="Dialog" fontSize="15" fontStyle="plain" hasLineColor="false" height="21.4609375" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true" width="66.02880859375" x="-8.014404296875" xml:space="preserve" y="0.0">128,000</y:NodeLabel>
+                  <y:NodeLabel alignment="right" autoSizePolicy="node_width" backgroundColor="#EBEBEB" borderDistance="0.0" fontFamily="Dialog" fontSize="15" fontStyle="plain" hasLineColor="false" height="21.4609375" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true" width="66.02880859375" x="-8.014404296875" xml:space="preserve" y="0.0">128,053</y:NodeLabel>
                   <y:Shape type="roundrectangle"/>
                   <y:State closed="true" closedHeight="50.0" closedWidth="50.0" innerGraphDisplayEnabled="false"/>
                   <y:Insets bottom="5" bottomF="5.0" left="5" leftF="5.0" right="5" rightF="5.0" top="5" topF="5.0"/>
@@ -901,7 +902,7 @@ Symbol</y:NodeLabel>
                   <y:Geometry height="512.7005374351372" width="441.8505465310891" x="3237.933665544466" y="434.62346584613215"/>
                   <y:Fill color="#C0C0C0" transparent="false"/>
                   <y:BorderStyle color="#FFFFFF" type="line" width="3.0"/>
-                  <y:NodeLabel alignment="right" autoSizePolicy="node_width" backgroundColor="#C0C0C0" borderDistance="0.0" fontFamily="Dialog" fontSize="80" fontStyle="plain" hasLineColor="false" height="97.125" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#360C16" verticalTextPosition="bottom" visible="true" width="441.8505465310891" x="0.0" xml:space="preserve" y="0.0">484,000</y:NodeLabel>
+                  <y:NodeLabel alignment="right" autoSizePolicy="node_width" backgroundColor="#C0C0C0" borderDistance="0.0" fontFamily="Dialog" fontSize="80" fontStyle="plain" hasLineColor="false" height="97.125" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#360C16" verticalTextPosition="bottom" visible="true" width="441.8505465310891" x="0.0" xml:space="preserve" y="0.0">488,971</y:NodeLabel>
                   <y:Shape type="roundrectangle"/>
                   <y:State closed="false" closedHeight="50.0" closedWidth="50.0" innerGraphDisplayEnabled="false"/>
                   <y:Insets bottom="15" bottomF="15.0" left="15" leftF="15.0" right="15" rightF="15.0" top="15" topF="15.0"/>
@@ -911,7 +912,7 @@ Symbol</y:NodeLabel>
                   <y:Geometry height="50.0" width="50.0" x="-633.3954973118279" y="-261.27402553763443"/>
                   <y:Fill color="#F5F5F5" transparent="false"/>
                   <y:BorderStyle color="#000000" type="dashed" width="1.0"/>
-                  <y:NodeLabel alignment="right" autoSizePolicy="node_width" backgroundColor="#EBEBEB" borderDistance="0.0" fontFamily="Dialog" fontSize="15" fontStyle="plain" hasLineColor="false" height="21.4609375" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true" width="66.02880859375" x="-8.014404296875" xml:space="preserve" y="0.0">484,000</y:NodeLabel>
+                  <y:NodeLabel alignment="right" autoSizePolicy="node_width" backgroundColor="#EBEBEB" borderDistance="0.0" fontFamily="Dialog" fontSize="15" fontStyle="plain" hasLineColor="false" height="21.4609375" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true" width="66.02880859375" x="-8.014404296875" xml:space="preserve" y="0.0">488,971</y:NodeLabel>
                   <y:Shape type="roundrectangle"/>
                   <y:State closed="true" closedHeight="50.0" closedWidth="50.0" innerGraphDisplayEnabled="false"/>
                   <y:Insets bottom="5" bottomF="5.0" left="5" leftF="5.0" right="5" rightF="5.0" top="5" topF="5.0"/>
