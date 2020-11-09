@@ -1,1 +1,0 @@
-/home/jamie/github/visual-graph-explorer/README.md
